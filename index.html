@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Abdellah Korsa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="a.jpg" alt="profile" class="profile-pic">
+            <h1>ABDELLAH KORSA</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <h2>Contact</h2>
+            <ul>
+                <li><strong>Telephone:</strong> <a href="#">0684735087</a></li>
+                <li><strong>Email:</strong> <a href="mailto:korsapk@gmail.com">korsapk@gmail.com</a></li>
+                <li><strong>Adresse:</strong> 279 Bis, Tasseltant II, Avenu Almarinyin, Marrakech</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdellah-korsa-2374a8279" target="_blank">Abdellah Korsa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>Je m'appelle Abdellah Korsa, j'ai 21 ans, j'habite à Marrakech. Je suis un stagiaire à l'ISTA, développement digital option full stack. Actuellement, je recherche un stage pour apprendre rapidement et développer mes compétences.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Compétences et qualités personnelles</h2>
+            <ul>
+                <li>Sérieux</li>
+                <li>Word, Excel</li>
+                <li>Travail en équipe</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Gestion de données</li>
+                <li>PHP</li>
+                <li>Algorithme</li>
+                <li>Python</li>
+                <li>Bootstrap</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Éducation</h2>
+            <p>Stagiaire - Institut Spécialisé de Technologie Appliquée NTIC SYBA, MARRAKECH</p>
+            <p>Baccalauréat - Lycée Maghrib Arabi, 2022</p>
+            <p>Option : Science Physique</p>
+        </section>
+
+        <aside id="languages">
+            <h2>Langues</h2>
+            <p>Arabe : Native</p>
+            <p>Anglais : B1</p>
+            <p>Français : B2</p>
+        </aside>
+    </div>
+
+    <script>
+        // jQuery for smooth scrolling
+        $(document).ready(function () {
+            $('a').on('click', function (e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    const hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
